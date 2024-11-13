@@ -1,0 +1,83 @@
+.jetbrains-mono-font {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+  background-color: rgb(201, 222, 255);
+  
+  margin: 0;
+}
+
+#title-header{
+  color: rgb(252, 242, 255);
+  padding: 6px;
+}
+
+#sub-title-header{
+  color: rgb(252, 242, 255);
+  font-weight: 400;
+  padding-bottom: 6px;
+}
+
+#title-content-1{
+  margin-bottom: 0;
+}
+
+#footer-p{
+  font-size: small;
+}
+/* Navigation Bar */
+nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+.nav-link{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: rgb(252, 241, 255);
+  font-weight: 500;
+}
+
+.nav-link:hover{
+  background-color: #80abe7;
+  color: #192f4b;
+}
+
+.nav-link.active{
+  background-color: #2273e6;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Marcações */
+.center{
+  text-align: center;
+}
+
+.bgcolor-1{
+  background-color: #0061EB;
+}
+.bgcolor-2{
+  background-color: #2063C0;
+}
+.bgcolor-3{
+  background-color: #325B96;   
+}
+.bgcolor-4{
+  background-color: #364C6B;   
+}
+.bgcolor-5{
+  background-color: #2B3441;   
+}
+
+.no-margin{
+  margin: 0;
+}

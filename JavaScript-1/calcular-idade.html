@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Cálculo de Idade</title>
+  </head>
+  <body>
+    <div id="site">
+      <header>
+        <h1>Cálculo de Idade Por Datas</h1>
+      </header>
+      <div id="content">
+        <h2>Ano Atual e Ano de Nascimento</h2>
+        <p id="a"></p>
+        <h2>Idade</h2>
+        <p id="b"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    let ano_atual = parseInt(prompt("Digite o Ano Atual:"));
+    let ano_de_nascimento = parseInt(prompt("Digite o Ano de Nascimento:"));
+
+    let idade = ano_atual - ano_de_nascimento;
+
+    document.getElementById(
+      "a"
+    ).innerHTML = `Ano Atual: ${ano_atual} | Ano de Nascimento: ${ano_de_nascimento}`;
+
+    document.getElementById("b").innerHTML = `Idade: ${idade}`;
+  </script>
+</html>

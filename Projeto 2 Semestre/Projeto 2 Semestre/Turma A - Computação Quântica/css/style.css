@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #101D36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1{color: #77ffc0;}
+
+.right-login{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00ff95;
+}
+
+.card-login{
+    color: #0f8;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text-field{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+margin: 10px ;
+}
+
+#input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #05974259;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#label{
+    color: #f0ffffde;
+    margin-bottom: 100px;
+}
+
+#input::placeholder{color: #f0ffff94;}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background-color: #0f8;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(255, 0, 0);
+}
+
+#links{
+    background-color: #101D36;
+    color: rgb(252, 236, 236);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#criptomedasIndex3{
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover{color: #ff0000;}
+
+
+.busca input {
+     padding: 5px;
+     border-radius: 10px;
+     font-size: 10px;
+     width: 200px;
+     background-color: rgb(247, 247, 247);
+     height: 20px; 
+}
+
+.busca button {
+    padding: 5px ;
+    background-color: #fdfdfd;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    height: 23px;
+    margin-right: 100px;
+    margin-top: 12px;
+}
+
+#Principal{
+    display: flex;
+    text-align: center;
+    text-shadow: #101D36;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+#principalindex2{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+#divdaesquerdaindex2 {
+  padding: 20px;
+  border-radius: 30px;
+  width: 750px;
+}
+
+#ExemplosdeMoedasIndex2{
+    margin-left: 80px;
+    font-size: 15px
+}
+
+
+#das{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+
+}
+
+.noticias, aside {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: -30px;
+}
+
+#criptomoedastitulo{
+    color: #0059ff;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ExemplosdeMoedas{color: rgb(0, 0, 0);}
+
+#rodape{
+    background-color: #101D36;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+#ParagrafrodaNoticia2{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 5px 30px 10px 30px;
+}
+
+#detalhesdanoticia2{font-size: 14px;}
+
+#ultimasNotícias{
+    color: #dd0d0d;
+    font-size: 20px;
+    margin-left: 60px ;
+    font-family:sans-serif;
+    font-weight: 700;
+}
+
+#ParagrafrodaNoticia1{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 2px 20px 20px 20px;
+    text-align: justify;
+    font-weight: 700;
+}
+
+#ExmoedaIndex2{
+    color: #0059ff;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#id{border-radius: 10px;}
+
+#Exemplo{border-radius:  rgb(255, 0, 0);}
+
+#teste{border-radius: 10px;}
+
+#img{
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: -5px;
+}
+#noticiaa{
+    font-size: 20px;
+    margin-top: -7px;
+    padding: 10px;
+    font-weight: 800;
+}
+
+#noticia2{
+    border: solid #afbfdd;
+    border-radius: 40px;
+    background-color: #586A8B;
+    width: 280px;
+    margin-top: 40px;
+    height: 250px;
+    margin:20 px ;
+    color: white;
+    font-family:sans-serif;
+    box-shadow: 0px 5px 20px 5px rgb(0, 12, 78);
+    font-weight: 800;
+    font-size: 10px;
+}
+
+#noticia3{
+    border: solid #afbfdd;
+    border-radius: 40px;
+    background-color: #586A8B;
+    width: 280px;
+    margin-top: 40px;
+    height: 250px;
+    margin:20 px ;
+    color: white;
+    font-family:sans-serif;
+    box-shadow: 0px 5px 20px 5px rgb(0, 12, 78);
+    font-weight: 800;
+    font-size: 10px; 
+}
+
+#MoedadeOuro{
+    border-radius: 10px;
+    width: 160px;
+    height: 90px;
+    margin-top: -10px;
+}
+
+#noticia1{
+    color: white;
+  border: solid #afbfdd;
+    border-radius: 40px ;
+    text-align: center;
+    background-color: #586A8B ;
+    width: 280px;
+    height: 260px;
+    box-shadow: 0px 5px 20px 5px rgb(0, 12, 78);
+    font-weight: 500;
+    font-size: 1px;
+}
+
+#titulodanoticia2{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.mainIndex3{display: flex;}
+
+.divdireitaindex3{
+    margin-left: 10px;
+    width: 50;
+    height: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divesquerdaindex3{
+    margin-left: 100px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 800;
+}
+
+.mainIndex6{display: flex;}
+
+.divdireitaindex6{
+    margin-left: 10px;
+    width: 50%;
+    margin-right: 40px;
+    display: flex;
+    font-weight: 800;
+}
+
+.divesquerdaindex6{
+    margin-left: 30px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    font-weight: 800;
+}
+
+#titulodoindex6{font-size: 30px;}
+
+#segundotitulodoindex6{
+    font-size: 18px;
+    width: 500px;
+}
+
+.mainindex7{display: flex;}
+
+.divdireitaindex7{
+    margin-left: 0px;
+    width: 50%;
+    margin-right:10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 800;
+}
+
+.divesquerdaindex7{
+    margin-left: 30px;
+    display: flex;
+    text-align: left;
+    font-weight: 800;
+    width: 50%;
+}
+
+#vant{
+    background-color: #586A8B;
+    width: 50%;
+    border-radius: 20px;
+    height: 200px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 800;
+    padding: 15px;
+    box-shadow: 0px 10px 20px 6px rgb(2, 133, 255);
+}
+
+.search-bar{
+    position: relative;
+    background-color: #fff;
+    border-radius: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 100px;
+}
+
+.search-bar Input {
+background-color: transporent;
+border: 0;
+outline: 0;
+width: 50px;
+padding: 1rem;
+font-size: 1rem;
+transition: width .4s ease-in-out
+}
+
+.search-bar label {
+position: absolute;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+right: 0;
+background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer
+}
+
+.search-bar icon {
+position: relative;
+display: block;
+width: 20px;
+height: 20px;
+}
+
+.search-bar .icon::after,
+.search-bar  .icon::before{
+    content: "";
+    position: absolute;
+    display:block;
+}
+
+.search-bar Icon::before {
+    width: 0px;
+    height: 18px;
+    border-radius: 50%;
+    top: 0;
+    Left: 0;
+    border: 3px solid
+}
+    
+.search-bar icon::after{
+    width: 10px; height: 3px;
+    background-color: #000;
+    transform: rotate(56deg);
+    bottom: 0;
+    right: 0;
+    border-radius: 2px; ;
+}
+
+.search-bar input:focus{width: 300px;}
+
+.search-bar input:focus+label .icon::after,
+.search-bar input:focus+label .icon::before{
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    border: solid 1px;
+    background-color: yellow;
+}
+
+.search-bar input:focus+label .icon::before{
+    transform: translate(-50%, -50%) rotate(45deg) ;
+}
+.search-bar input:focus+label .icon::after{
+    transform: translate(-50%, -50%) rotate(45deg) ;
+}
+
+#kj{color: #0059ff;}
+
+#kk{color: red;}
+#teste{
+    font-size: 20px;
+    }
+#main5{
+        border:solid  1px;
+        width: 50%;
+        height: 50%;
+        text-align: justify;
+}
+
+#TD{margin-left: 140px;}
+
+#divindex9{
+    border-radius: 20px;
+    background-color: #4b5058;
+    color: white;
+    font-weight: 800;
+    width: 50%;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pindex9{
+    background-color: #2b134b;
+    border-radius: 20px;
+}
+#labelindex8{
+    color: #f0ffffde;
+}
+#Obrigado{
+    color: #f0ffffde;
+}
+#Obrigadoo{
+    color: #00ff95;
+}
+.card-login2{
+    color: #0f8;
+    font-weight: 800;
+    margin: 0;
+}
+#flex{
+    display: flex;
+    margin-left: 0px;
+}
+#noticia222{
+    border: solid #afbfdd;
+    border-radius: 40px;
+    background-color: #586A8B;
+    width: 280px;
+    margin-top: -80px;
+    height: 250px;
+    margin:20 px ;
+    color: white;
+    font-family:sans-serif;
+    box-shadow: 0px 5px 20px 5px rgb(0, 12, 78);
+    font-weight: 800;
+    font-size: 10px;
+    margin-left: 90px;
+
+}
