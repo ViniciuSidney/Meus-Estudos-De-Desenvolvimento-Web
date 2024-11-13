@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: "JetBrains Mono";
+        margin: 0px;
+        background-color: #06638e;
+        color: white;
+      }
+
+      #header {
+        padding: 10px;
+        text-align: center;
+        background-color: #243d49;
+      }
+
+      #navigation {
+        text-align: center;
+        background-color: #044c6d;
+        font-size: 16px;
+      }
+
+      h1 {
+        margin: 0px;
+      }
+
+      h2,
+      p {
+        padding-top: 2%;
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+      }
+
+      #formulario {
+        text-align: center;
+        width: 100%;
+        margin: 0px 0px;
+      }
+
+      form {
+        text-align: center;
+        display: inline-block;
+        width: 300px;
+      }
+
+      form label {
+        display: block;
+        font-size: 20px;
+      }
+
+      form input {
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 25px;
+        width: 100%;
+      }
+
+      #fname,
+      #lname,
+      #submit-button {
+        font-family: "JetBrains Mono";
+        background-color: #46c4ff;
+        border: 5px solid #044c6d;
+        color: #243d49;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Contato</h1>
+    </div>
+    <div id="navigation">
+      <ul>
+        <li><a href="index.html">"Bem Vindos"</a></li>
+        <li><a href="sobrenos.html">Sobre Nós</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Entre em contato por aqui</h2>
+      <p>Preencha com seus dados</p>
+      <div id="formulario">
+        <form>
+          <label for="fname">Primeiro nome:</label>
+          <input type="text" id="fname" name="fname" value="" />
+          <label for="lname">Último Nome:</label>
+          <input type="text" id="lname" name="lname" value="" />
+          <input type="submit" id="submit-button" value="Enviar" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+
+body{
+	background-color: #9AEBA3;
+	font-family: JetBrains Mono;
+	margin: 10%;
+}
+
+h1, h2, h3{
+	color: #012030;
+}
+
+div{
+	background-color: #DAFDBA;
+	padding: 5px 20px 20px;
+}
+.noticia{
+	background-color: #45C4B0;
+	padding: 1%;
+}
+
+mark{
+	background-color: #f3d1ce;
+}
+
+span{
+	color: #c4170c;
+}
+
+p{
+	color: black;
+	font-weight: 500;
+}
+
+a{
+	text-decoration: none;
+	color: #13678A;
+}
+
+img{
+	width: 60%;
+	border: 5px solid #012030;
+}
+
+ul{
+	list-style-type: square;
+}
+
+li{
+	padding-bottom: 5px;
+	font-weight: 600;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+th{
+	background-color: #71ad77;
+}
+td{
+	background-color: #DAFDBA;
+}
+th, td{
+	padding: 10px;
+	text-align: center;
+}
+table, th, td{
+	border: 2px solid black;
+}

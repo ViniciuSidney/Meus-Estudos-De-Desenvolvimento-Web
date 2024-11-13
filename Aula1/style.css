@@ -1,0 +1,27 @@
+body{
+	background-color: #F8B704;
+	font-family: JetBrains Mono;
+	margin: 10%;
+}
+
+h1, h2, h3{
+	color: #D95B04;
+}
+
+p{
+	color: #D95B04;
+}
+
+img{
+	width: 30%;
+	border: 5px solid #D95B04;
+}
+
+span{
+	color: #D95B04;
+}
+
+mark{
+	color: #D95B04;
+	background-color: #ffa54a;
+}
