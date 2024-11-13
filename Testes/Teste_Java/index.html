@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+  </head>
+  <body>
+    <script>
+      //nome = prompt("Qual é o seu nome?")
+      //document.write(`<h3>Seja bem-vindo, ${nome}!<h3>`);
+      //alert("Belo nome!")
+
+      //for(i=10;i>0;i--) alert("Clique mais "+i+" vezes");
+
+      //let escolha = parseInt(prompt("Escolha 1 para calcular a área do Quadrado e 2 para calcular a área do Triângulo Retângulo"));
+
+      //if (escolha == 1) {
+      //  let lado = parseInt(prompt("Digite o lado do quadrado"));
+      //  let area_quadrado = lado * lado;
+      //  document.write(`<h1>A área do quadrado é ${area_quadrado}!<h1>`);
+      //} else if (escolha == 2) {
+      //  let base = parseInt(prompt("Digite a base do triâgulo"));
+      //  let altura = parseInt(prompt("Digite a altura do triâgulo"));
+      //  let area_triangulo = (base * altura) / 2;
+      //  document.write(`<h1>A área do triângulo é ${area_triangulo}!<h1>`);
+      //}
+      
+      let a = parseInt(prompt("Digite o valor do ( a )"));
+      let b = parseInt(prompt("Digite o valor do ( b )"));
+      let c = parseInt(prompt("Digite o valor do ( c )"));
+
+      let delta = b * b - 4 * a * c;
+
+      if ( delta < 0 ) document.write("Erro: Delta negativo ( "+ delta +" )");
+      else{
+        let x1 = (-b + Math.sqrt(delta) ) / 2 * a;
+        let x2 = (-b - Math.sqrt(delta) ) / 2 * a;
+
+        document.write(`<h1>O resultado da equação de 2° grau é ${x1} e ${x2}!<h1>`);
+      }
+      
+    </script>
+  </body>
+</html>

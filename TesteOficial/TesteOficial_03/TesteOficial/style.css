@@ -1,0 +1,60 @@
+
+body{
+  font-family: "JetBrains Mono";
+}
+
+h1, h2{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Texts */
+#tx-title{
+  margin-bottom: 0px;
+}
+#tx-version{
+  margin-top: 0px;
+  text-decoration: underline;
+}
+
+#tx-points{
+  font-size: 30px;
+  margin: auto;
+}
+#tx-points-gains{
+  margin-bottom: 0px;
+}
+#tx-points-per-second{
+  margin-top: 0px;
+}
+#tx-more-click{
+  margin-top: 0px;
+}
+
+/* Buttons */
+button{
+  width: auto;
+  font-size: large;
+  font-family: "JetBrains Mono";
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #d1e3e2;
+}
+
+#tx-price-more-click, #tx-price-more-clickps{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#tx-amount-more-click{
+  margin-top: 0px;
+  font-size: 14px;
+}
+#tx-amount-more-clickps{
+  margin-top: 0px;
+  font-size: 14px;
+}

@@ -1,0 +1,36 @@
+
+body{
+    background-color: #DAFDBA;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #012030;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    background-color: #9AEBA3;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid #012030;
+    border-radius: 10px;
+    box-shadow: 2px 2px #01203042;
+}
+div h2{
+    text-align: center;
+}
+div p{
+    text-align: center;
+    font-weight: bolder;
+}
+
+label{
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+}

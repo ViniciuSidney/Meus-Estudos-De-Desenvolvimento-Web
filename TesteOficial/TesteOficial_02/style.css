@@ -1,0 +1,15 @@
+
+h1, h2, h3, h4{
+  text-align: center;
+}
+
+button{
+  width: 100%;
+  font-size: large;
+  font-family: "JetBrains Mono";
+  font-weight: bold;
+}
+
+#custo, #custoPorSegundo{
+  margin-top: 0;
+}

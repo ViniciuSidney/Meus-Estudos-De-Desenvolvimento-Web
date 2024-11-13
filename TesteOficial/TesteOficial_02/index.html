@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jogo</title>
+  </head>
+  <body>
+    <h1 id="title">Jogo!</h1>
+    <h2>Versão 1.0.3</h2>
+
+    <h1 id="pontos">0</h1>
+    <h4 id="ganhos">+1</h4>
+    <h4 id="ganhosPorSegundo">+0 por Segundo</h4>
+    <div id="container">
+      <div>
+        <button type="button" onclick="changeStats()">Clique!</button>
+        <br /><br /><br />
+        <button type="button" onclick="buyMoreGains()">
+          Aumentar Cliques!
+        </button>
+        <h4 id="custo">10 Pontos</h4>
+        <button type="button" onclick="buyMoreGainsPerSecond()">
+          Aumentar Cliques Por Segundo!
+        </button>
+        <h4 id="custoPorSegundo">100 Pontos</h4>
+      </div>
+    </div>
+  </body>
+  <script>
+    let pontos = 0;
+    let ganho = 1;
+    let ganhoPorSegundo = 0;
+    let custo = 10;
+    let custoPorSegundo = 100;
+
+    function changeStats() {
+      pontos += ganho;
+      document.getElementById("pontos").innerHTML = pontos;
+      document.getElementById("ganhos").innerHTML = "+" + ganho;
+    }
+
+    setInterval(test, 100);
+    function test() {
+      pontos += ganhoPorSegundo;
+      document.getElementById("pontos").innerHTML = pontos;
+    }
+
+    function buyMoreGains() {
+      if (pontos >= custo) {
+        ganho += 1;
+        pontos = pontos - custo;
+        custo *= 2;
+        document.getElementById("pontos").innerHTML = pontos;
+        document.getElementById("ganhos").innerHTML = "+" + ganho;
+        document.getElementById("custo").innerHTML = custo + " Pontos";
+      } else if (pontos < custo) {
+        alert("Pontos insuficientes");
+      }
+    }
+
+    function buyMoreGainsPerSecond() {
+      if (pontos >= custoPorSegundo) {
+        ganhoPorSegundo += 1;
+        pontos = pontos - custoPorSegundo;
+        custoPorSegundo *= 2;
+        document.getElementById("pontos").innerHTML = pontos;
+        document.getElementById("ganhosPorSegundo").innerHTML =
+          "+" + ganhoPorSegundo + " por Segundo";
+        document.getElementById("custoPorSegundo").innerHTML =
+          custoPorSegundo + " Pontos";
+      } else if (pontos < custoPorSegundo) {
+        alert("Pontos insuficientes");
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Teste</title>
+  </head>
+  <body>
+    <h1 id="tx-title">Teste!</h1>
+    <p id="tx-version">Versão 1.1.6</p>
+
+    <p id="tx-points">0</p>
+    <p id="tx-points-gains">+1 por Clique</p>
+    <p id="tx-points-per-second">+0 por Segundo</p>
+    <div id="container">
+      <div>
+        <button id="bt-click" type="button" onclick="changeStats()">Clique!</button>
+        <br><br><br>
+        <button id="bt-more-click" type="button" onclick="buyMoreGains()">
+          Aumentar Cliques!
+        </button>
+        <p id="tx-price-more-click">10 Pontos</p>
+        <p id="tx-amount-more-click">+1 Ponto por Clique</p>
+
+        <button id="bt-more-clickps" type="button" onclick="buyMoreGainsPerSecond()">
+          Aumentar Cliques Por Segundo!
+        </button>
+        <p id="tx-price-more-clickps">100 Pontos</p>
+        <p id="tx-amount-more-clickps">+1 Ponto por Segundo</p>
+
+      </div>
+    </div>
+  </body>
+
+  <script>
+    //Variáveis
+    let points = 0;
+    let points_gains = 1;
+    let points_per_second = 0;
+    let price_points_per_click = 10;
+    let price_points_per_second = 100;
+
+    //Variáveis HTML
+    let tx_points = document.getElementById("tx-points");
+    let tx_points_gains = document.getElementById("tx-points-gains");
+    let tx_points_per_second = document.getElementById("tx-points-per-second");
+    let tx_price_more_click = document.getElementById("tx-price-more-click");
+    let bt_more_click = document.getElementById("bt-more-click");
+    let tx_price_more_clickps = document.getElementById("tx-price-more-clickps");
+    let bt_more_clickps = document.getElementById("bt-more-clickps");
+
+    const variableHandler = {
+        set(target, property, value) {
+          tx_points.innerHTML = value;
+          target[property] = value;
+          return true;
+        },
+      };
+    const points_ = new Proxy({ value: points }, variableHandler)
+    function changeStats() {
+      
+      //points += points_gains;
+      points_.value += points_gains;
+
+      //tx_points.innerHTML = points;
+      tx_points_gains.innerHTML = "+" + points_gains + " por Clique";
+
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    setInterval(test, 1000);
+    function test() {
+      points_ += points_per_second;
+      //tx_points.innerHTML = points;
+    }
+
+    function buyMoreGains() {
+      tx_price_more_clickps.innerHTML = "aaa";
+      if (points_ >= price_points_per_click) {
+        points_gains += 1;
+        points_ -= price_points_per_click;
+        price_points_per_click *= 2;
+        //tx_points.innerHTML = points_;
+        tx_points_gains.innerHTML = "+" + points_gains + " por Clique";
+        tx_price_more_click.innerHTML = price_points_per_click + " Pontos";
+
+        async function changeColor() {
+          tx_price_more_click.style.color = "#098748";
+          bt_more_click.style.backgroundColor = "#0ee378";
+          await sleep(600);
+          tx_price_more_click.style.color = "black";
+          bt_more_click.style.backgroundColor = "#d1e3e2";
+        }
+        changeColor();
+
+      } else if (points_ < price_points_per_click) {
+        async function noPoints() {
+          tx_price_more_click.innerHTML = "Pontos Insuficientes";
+          tx_price_more_click.style.color = "red";
+          bt_more_click.style.backgroundColor = "#ff6e7a";
+          await sleep(600);
+          tx_price_more_click.innerHTML =
+          price_points_per_click + " Pontos";
+          tx_price_more_click.style.color = "black";
+          bt_more_click.style.backgroundColor = "#d1e3e2";
+        }
+        noPoints();
+      }
+    }
+
+    function buyMoreGainsPerSecond() {
+      if (points_ >= price_points_per_second) {
+        points_per_second += 1;
+        points_ -= price_points_per_second;
+        price_points_per_second *= 2;
+        //tx_points.innerHTML = points;
+        tx_points_per_second.innerHTML = "+" + points_per_second + " por Segundo";
+        tx_price_more_clickps.innerHTML = price_points_per_second + " Pontos";
+
+        async function changeColor() {
+          tx_price_more_clickps.style.color = "#098748";
+          bt_more_clickps.style.backgroundColor = "#0ee378";
+          await sleep(600);
+          tx_price_more_clickps.style.color = "black";
+          bt_more_clickps.style.backgroundColor = "#d1e3e2";
+        }
+        changeColor();
+        
+      } else if (points_ < price_points_per_second) {
+        async function noPoints() {
+          tx_price_more_clickps.innerHTML = "Pontos Insuficientes";
+          tx_price_more_clickps.style.color = "red";
+          bt_more_clickps.style.backgroundColor = "#ff6e7a";
+          await sleep(600);
+          tx_price_more_clickps.innerHTML =
+          price_points_per_second + " Pontos";
+          tx_price_more_clickps.style.color = "black";
+          bt_more_clickps.style.backgroundColor = "#d1e3e2";
+        }
+        noPoints();
+      }
+    }
+  </script>
+</html>
